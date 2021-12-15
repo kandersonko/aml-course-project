@@ -1,1 +1,1 @@
-# aml-course-project
+# Adversarial Machine Learning Course Project (Fall 2021)
