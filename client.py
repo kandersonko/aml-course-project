@@ -81,9 +81,11 @@ class FlowerClient(fl.client.NumPyClient):
     def evaluate(self, parameters, config):
         self.set_parameters(parameters)
 
-        trainer = pl.Trainer(progress_bar_refresh_rate=0)
-        results = trainer.test(self.model, self.val_loader)
-        loss = results[0]["test_loss"]
+        # trainer = pl.Trainer(progress_bar_refresh_rate=0)
+        # results = trainer.test(self.model, self.val_loader)
+        # loss = results[0]["test_loss"]
+        # skip evaluation, return dummy value
+        loss = 0.9
 
         return loss, 10000, {"loss": loss}
 

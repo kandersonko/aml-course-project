@@ -21,8 +21,8 @@ def load_data(data_dir, batch_size):
     y_train = y_train.argmax(axis=-1)
     y_val = y_val.argmax(axis=-1)
     train_dataset = TensorDataset(X_train, y_train)
-    train_loader = DataLoader(train_dataset, batch_size=batch_size)
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, num_workers=16)
     val_dataset = TensorDataset(X_val, y_val)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size, num_workers=16)
     return train_loader, val_loader
 

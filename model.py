@@ -6,7 +6,7 @@ import pytorch_lightning as pl
 import torchmetrics
 
 
-# https://github.com/LixiangHan/GANs-for-1D-Signal
+# Based on 1D GAN signal generation from https://github.com/LixiangHan/GANs-for-1D-Signal
 
 clip_value = 0.01
 
