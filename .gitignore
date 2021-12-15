@@ -1,0 +1,9 @@
+.vs-code/
+.idea/
+data/training2017/
+data/training2017.zip
+data/trainingset.mat
+.DS_Store
+notebooks/tb_logs/
+/lightning_logs/
+__pycache__/
